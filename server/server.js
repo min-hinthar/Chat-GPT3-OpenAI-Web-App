@@ -47,4 +47,4 @@ app.post('/', async(req, res) => {
 
 app.listen(5000, () => {
     console.log("SERVER is running on PORT: http://localhost:5000");
-})
+});
