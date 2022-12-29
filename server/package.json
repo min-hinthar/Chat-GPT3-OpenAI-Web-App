@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "server": "npm run server",
+    "server": "npm server",
     "build": "npm build"
   },
   "keywords": [],
