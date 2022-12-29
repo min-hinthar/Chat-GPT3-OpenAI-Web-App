@@ -1,11 +1,10 @@
-# 
-
-
 # Project Title [ Chat-GPT3-OpenAI-Web-App ]
 
-![Walkthrough GIF](./assets/GIFs/)
-![App Screenshots](./assets/screenshots/1.jpeg)
+Deployed Live URL on Vercel: https://min-chat-gpt-3-open-ai-codex-app.vercel.app/
 
+![App Screenshots](./client/public/ChatGPT_1.jpg)
+![App Screenshots](./client/public/ChatGPT_2.jpg)
+![App Screenshots](./client/public/ChatGPT_3.jpg)
 
 ## Table of Contents
 1. [Description](#description)
@@ -29,9 +28,9 @@ Node.js, Vite
 
 
 #### Tech-Stacks
-Frontend : Node JS, Vite
+Frontend : Node.JS, Vite, CSS3
 
-OpenAI, GPT3
+OpenAI, GPT3, Express.js
 
 -----
 
