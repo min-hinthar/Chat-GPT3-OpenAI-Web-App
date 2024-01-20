@@ -1,9 +1,6 @@
 import express from 'express';
-import * as dotenv from 'dotenv';
 import cors from 'cors';
 import OpenAI from "openai";
-
-dotenv.config();
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
