@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import OpenAI from "openai";
 
+require('dotenv').config();
+
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
@@ -26,7 +28,7 @@ app.post('/', async(req, res) => {
             model: "gpt-4",
             prompt: `${prompt}`,
             temperature: 1,
-            max_tokens: 256,
+            max_tokens: 3000,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
