@@ -17,7 +17,7 @@ app.get('/', async(req, res) => {
 });
 
 // beta.openai.com/playground/node.js documentation
-app.post('/v1/chat/completions', async(req, res) => {
+app.post('/', async(req, res) => {
     try {
         const prompt = req.body.prompt;
 
