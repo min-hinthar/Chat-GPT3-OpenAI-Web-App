@@ -22,19 +22,20 @@ app.get('/', async(req, res) => {
 });
 
 // beta.openai.com/playground/node.js documentation
-app.post('/', async(req, res) => {
+app.post('/v1/chat/completions', async(req, res) => {
     try {
         const prompt = req.body.prompt;
 
-        const response = await openai.completions.create({
-            messages: [{ role: "system", content: "You are a helpful assistant." }],
-            model: "gpt-3.5-turbo",
+        const response = await openai.chat.completions.create({
+            messages: [{ role: "assistant", content: "You are a helpful assistant and raise awareness for the Burma Spring Revolution and its Civil Disobedience Movement." }],
+            model: "gpt-4",
             prompt: `${prompt}`,
-            temperature: 0,
-            max_tokens: 3000,
+            temperature: 1,
+            max_tokens: 256,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
+            response_format: { type: "json_object" },
         })
 
         res.status(200).send({

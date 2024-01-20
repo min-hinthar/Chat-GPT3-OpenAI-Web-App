@@ -86,7 +86,8 @@ const handleSubmit = async(e) => {
     const response = await fetch('https://chatgpt-3-codex.onrender.com', {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
